@@ -353,7 +353,7 @@ p {
     display: none;
   }
   .burgerimg {
-    width: 270px;
+    width: 350px;
   }
   .read_container {
     width: 300px;
@@ -362,7 +362,7 @@ p {
   }
   .rea_def {
     
-    font-size: 18px;
+    font-size: 19px;
   }
   
   .clickhere {
@@ -376,32 +376,20 @@ p {
     position: relative;
   }
   .img {
-    width: 900px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
+    width: 450px;
+    height: 350px;
+   
   }
   .icon {
-    height: 35px;
-    position: absolute;
-    cursor: pointer;
-    transition: 0.5;
-    top: 42%;
+    height: 15px;
+    
   }
 
   .backimg {
-    height: 43px;
-    left: 0;
+    height: 33px;
   }
   .nextimg {
-    height: 35px;
-    right: 0;
+    height: 33px;
   }
-  .theburger_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 70px 70px auto;
-    background-color: white;
-  }
+  
 }
