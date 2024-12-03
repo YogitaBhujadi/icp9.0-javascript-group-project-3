@@ -12,9 +12,9 @@
   </head>
   <body>
     <div id="navbar"></div>
-
-    <div class="main_container">
-      <!-- <i class="fa-solid fa-bars" class="hamburger" onclick="opensidebar()"></i>
+    <main>
+      <div class="main_container">
+        <!-- <i class="fa-solid fa-bars" class="hamburger" onclick="opensidebar()"></i>
       <div class="sidebar" id="sidebar">
         <div id="close" onclick="close()">
           <i class="fa-solid fa-xmark"></i>
@@ -49,145 +49,151 @@
         </div>
       </div>-->
 
-      <div class="ourstory">
-        <div class="overlay-text">OUR STORY</div>
+        <div class="ourstory">
+          <div class="overlay-text">OUR STORY</div>
+        </div>
       </div>
-    </div>
-    <div class="the-hotn-text">
-      <h1>The Space</h1>
-      <p>
-        The Hot 'N' Fast is a classic Pune located. Established in 2023, the
-        restaurant is beloved around the city as a favorite place for an upscale
-        yet approachable night of dinner and drinks.
-      </p>
+      <div class="the-hotn-text">
+        <h1>The Space</h1>
+        <p>
+          The Hot 'N' Fast is a classic Pune located. Established in 2023, the
+          restaurant is beloved around the city as a favorite place for an
+          upscale yet approachable night of dinner and drinks.
+        </p>
 
-      <p>
-        Brought to you by Executive Chef Jennifer Puccio and award-winning pune
-        designer Ken Fulk, The Hot 'N' Fast focuses on classic comfort foods
-        with flavorful twists, like Chef Puccio’s signature Marlowe Burger,
-        seasonal poulet vert, brussels sprout chips, and quail egg-topped steak
-        tartare.
-      </p>
-    </div>
-    <div class="theburger_container">
-      <div class="burger_def">
-        <hr />
-        <h1 class="burger-heading">The Burger</h1>
-        <hr />
-        <p class="burger_text">
-          Topped with cheddar, caramelized onions, bacon and horseradish aïoli,
-          the Hot'N burger is one of Pune’s best. An immediate hit when it was
-          introduced to the city in 2010, the Hot'N burger still lives on many
-          of the city’s “Best Burger” lists, including the ones by Eater and The
-          Infatuation.
+        <p>
+          Brought to you by Executive Chef Jennifer Puccio and award-winning
+          pune designer Ken Fulk, The Hot 'N' Fast focuses on classic comfort
+          foods with flavorful twists, like Chef Puccio’s signature Marlowe
+          Burger, seasonal poulet vert, brussels sprout chips, and quail
+          egg-topped steak tartare.
         </p>
       </div>
-      <div class="burger_img">
-        <img src="../img/burger.jpg" alt="" class="burgerimg" />
+      <div class="theburger_container">
+        <div class="burger_def">
+          <hr />
+          <h1 class="burger-heading">The Burger</h1>
+          <hr />
+          <p class="burger_text">
+            Topped with cheddar, caramelized onions, bacon and horseradish
+            aïoli, the Hot'N burger is one of Pune’s best. An immediate hit when
+            it was introduced to the city in 2010, the Hot'N burger still lives
+            on many of the city’s “Best Burger” lists, including the ones by
+            Eater and The Infatuation.
+          </p>
+        </div>
+        <div class="burger_img">
+          <img src="../img/burger.jpg" alt="" class="burgerimg" />
+        </div>
       </div>
-    </div>
-    <div class="read_container">
-      <div class="read">
-        <p class="rea_def" onclick="read()">
-          Read the 2010 review that started it all..📰
-        </p>
-      </div>
+      <div class="read_container">
+        <div class="read">
+          <p class="rea_def" onclick="read()">
+            Read the 2010 review that started it all..📰
+          </p>
+        </div>
 
-      <a
-        href="https://www.mashed.com/1134075/the-story-behind-the-rise-and-fall-of-hot-n-now/"
-      >
-        <img src="../img/tap.png" alt="" class="clickhere"
-      /></a>
-    </div>
-    <div class="carousel-container">
-      <div class="carousel">
-        <div class="overlay" id="overlayid">
-          <div class="model">
-            <div class="cookies-container">
-              <img src="../img/cookie.png" alt="" class="cookieimg" />
-              <h2 class="heading-center">Cookies Consent</h2>
-              <img
-                src="../img/close.png"
-                alt="close"
-                class="closeimg"
-                onclick="closeModel()"
-              />
+        <a
+          href="https://www.mashed.com/1134075/the-story-behind-the-rise-and-fall-of-hot-n-now/"
+        >
+          <img src="../img/tap.png" alt="" class="clickhere"
+        /></a>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="overlay" id="overlayid">
+            <div class="model">
+              <div class="cookies-container">
+                <img src="../img/cookie.png" alt="" class="cookieimg" />
+                <h2 class="heading-center">Cookies Consent</h2>
+                <img
+                  src="../img/close.png"
+                  alt="close"
+                  class="closeimg"
+                  onclick="closeModel()"
+                />
+              </div>
+              <p class="">
+                This website use cookies to help you have a superior and more
+                relevant browsing experience on the website.
+              </p>
+              <div class="buttons">
+                <button class="button" id="acceptBtn" onclick="acceptBtn()">
+                  Accept
+                </button>
+                <button class="button" id="declineBtn" onclick="dectBtn()">
+                  Decline
+                </button>
+              </div>
             </div>
-            <p class="">
-              This website use cookies to help you have a superior and more
-              relevant browsing experience on the website.
-            </p>
-            <div class="buttons">
-              <button class="button" id="acceptBtn" onclick="acceptBtn()">
-                Accept
-              </button>
-              <button class="button" id="declineBtn" onclick="dectBtn()">
-                Decline
-              </button>
-            </div>
+          </div>
+
+          <div class="conitainer">
+            <img
+              src="../img/friends.jpg"
+              alt="friends"
+              class="img"
+              id="slide"
+            />
+            <img
+              src="../img/back.png"
+              alt="back"
+              class="icon backimg"
+              onclick="back()"
+            />
+            <img
+              src="../img/next.png"
+              alt="next"
+              class="icon nextimg"
+              onclick="next()"
+            />
           </div>
         </div>
       </div>
-      <div class="conitainer">
-        <img src="../img/friends.jpg" alt="friends" class="img" id="slide" />
-        <img
-          src="../img/back.png"
-          alt="back"
-          class="icon backimg"
-          onclick="back()"
+      <form class="contact-form">
+        <h2 class="heading-center">Contact Us</h2>
+        <label for="name">Name*</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
         />
-        <img
-          src="../img/next.png"
-          alt="next"
-          class="icon nextimg"
-          onclick="next()"
+
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
         />
-      </div>
-    </div>
-    <form class="contact-form" action="submit_form.php" method="POST">
-      <h2 class="heading-center">Contact Us</h2>
-      <label for="name">Name*</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your Name"
-        required
-      />
 
-      <label for="email">Email*</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Your Email"
-        required
-      />
+        <label for="email">Mobile Number*</label>
+        <input
+          type="number"
+          id="contact"
+          name="mobile"
+          placeholder="Mobile Number"
+          required
+        />
 
-      <label for="email">Mobile Number*</label>
-      <input
-        type="number"
-        id="contact"
-        name="mobile"
-        placeholder="Mobile Number"
-        required
-      />
+        <label for="message">Your Message*</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
 
-      <label for="message">Your Message*</label>
-      <textarea
-        id="message"
-        name="message"
-        placeholder="Your Message"
-        rows="5"
-        required
-      ></textarea>
-
-      <button type="submit" onclick="localstoragesend()">Send</button>
-    </form>
-    <div class="contact_container">
+        <button type="submit" onclick="localstoragesend()">Send</button>
+      </form>
+      <!-- <div class="contact_container">
       <a href="contact.html" class="contact">Contact</a>
-    </div>
-
+    </div> -->
+    </main>
     <div id="footer"></div>
     <script
       src="https://kit.fontawesome.com/8a9cf74bd6.js"

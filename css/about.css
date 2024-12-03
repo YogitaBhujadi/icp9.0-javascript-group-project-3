@@ -75,12 +75,12 @@ p {
   position: relative;
   margin: 6px 50px 0px 50px;
 }
-.ourstory:hover {
+/* .ourstory:hover {
   margin: 20px;
   transition: 2s;
-  transform: scale(1.1);
-  border-radius: 30px;
-}
+  transform: scale(1.1); 
+   border-radius: 30px;
+} */
 .overlay-text {
   font-size: 48px;
   font-weight: bold;
