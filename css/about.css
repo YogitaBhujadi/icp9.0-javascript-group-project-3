@@ -335,10 +335,6 @@ p {
   .ourstory {
     width: 80%;
     height: 300px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 6px 50px 0px 50px;
   }
 
   .overlay-text {
@@ -347,42 +343,42 @@ p {
   }
   .the-hotn-text {
     width: 300px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .burger_def {
     display: none;
   }
   .burgerimg {
-    width: 350px;
+    width: 330px;
   }
   .read_container {
     width: 300px;
-    
-    
   }
   .rea_def {
-    
     font-size: 19px;
   }
-  
+
   .clickhere {
     width: 20px;
   }
-  .conitainer {
-    display: block;
-    margin: 20px auto;
-    width: fit-content;
-    margin: 50px auto;
-    position: relative;
+
+  .contact {
+    font-size: 17px;
   }
+  .heading-center {
+    text-align: center;
+  }
+  .contact-form {
+    max-width: 300px;
+    width: 100%;
+  }
+
   .img {
     width: 450px;
     height: 350px;
-   
   }
   .icon {
     height: 15px;
-    
   }
 
   .backimg {
@@ -391,5 +387,47 @@ p {
   .nextimg {
     height: 33px;
   }
-  
+  .contact-form h2 {
+    font-size: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .cookieimg {
+    width: 25px;
+    height: 30px;
+    margin-right: 30px;
+  }
+  .closeimg {
+    width: 10px;
+    height: 15px;
+  }
+  .model {
+    width: 280px;
+    height: 200px;
+  }
+
+  .button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 28px;
+  }
+  .heading-center {
+    font-size: 14px;
+  }
+  .read_container {
+    width: 500px;
+    /* height: 500px; */
+    display: block;
+    margin: 20px auto;
+    margin-top: 40px;
+    text-align: center;
+  }
 }
