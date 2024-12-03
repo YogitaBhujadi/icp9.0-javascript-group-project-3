@@ -422,12 +422,102 @@ p {
   .heading-center {
     font-size: 14px;
   }
+}
+
+/* Tab device 700px*/
+@media screen and (max-width: 700px) {
+  .ourstory {
+    width: 90%;
+    height: 400px;
+  }
+
+  .overlay-text {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .the-hotn-text {
+    width: 400px;
+    font-size: 16px;
+  }
+  .theburger_container {
+    width: 90%;
+  }
+  .burger_def {
+    display: none;
+  }
+  .burgerimg {
+    width: 550px;
+    height: 300px;
+  }
   .read_container {
-    width: 500px;
-    /* height: 500px; */
-    display: block;
-    margin: 20px auto;
-    margin-top: 40px;
+    width: 300px;
+  }
+  .rea_def {
+    font-size: 19px;
+  }
+
+  .clickhere {
+    width: 20px;
+  }
+
+  .contact {
+    font-size: 17px;
+  }
+  .heading-center {
     text-align: center;
+  }
+  .contact-form {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .img {
+    width: 450px;
+    height: 350px;
+  }
+  .icon {
+    height: 15px;
+  }
+
+  .backimg {
+    height: 33px;
+  }
+  .nextimg {
+    height: 33px;
+  }
+  .contact-form h2 {
+    font-size: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .cookieimg {
+    width: 25px;
+    height: 30px;
+    margin-right: 30px;
+  }
+  .closeimg {
+    width: 10px;
+    height: 15px;
+  }
+  .model {
+    width: 280px;
+    height: 200px;
+  }
+
+  .button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 28px;
+  }
+  .heading-center {
+    font-size: 14px;
   }
 }
