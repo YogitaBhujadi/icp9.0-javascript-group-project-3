@@ -1,21 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Restaurant - Reservation</title>
+    <link rel="icon" type="image/png" href="/img/Logo icon.png">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/reservation.css">
-    <script src="/js/reservation.js" ></script>
+    <script src="/js/reservation.js" defer></script>
     <script src="/js/index.js" defer></script>
 </head>
+
 <body>
     <div id="navbar"></div>
     <main>
-        <h1>Make a Reservation</h1>
-        <p>Book a table at our restaurant easily!</p>
-        <!-- Add reservation form here -->
+        <section class="reservation-intro">
+            <h1>🔥 Book Your Table at Hot 'n Fast! 🍴</h1>
+            <p class="tagline">“Delicious Meals, Fast Service”</p>
+            <p>
+                Get ready to enjoy tasty meals at Hot 'n Fast! Reserve your table now for a fun and quick dining
+                experience you’ll love.
+            </p>
+        </section>
+
+        <section class="reservation-categories">
+            <h2>Reservation Options</h2>
+            <div class="categories">
+                <div class="category-card">
+                    <img src="/img/Dine-in.jpg" alt="Dine-In Reservation" class="category-img">
+                    <h3>🍽️ Menu Reservation</h3>
+                    <p>Reserve a table to explore our exquisite menu.</p>
+                    <button class="btn card-btn" onclick="openForm('menuForm')">Reserve Table</button>
+                </div>
+                <div class="category-card">
+                    <img src="/img/Pickup.jpg" alt="Order Pickup" class="category-img">
+                    <h3>🛍️ Order Pickup</h3>
+                    <p>Pre-order online and pick it up at your convenience.</p>
+                    <button class="btn card-btn" onclick="openForm('orderForm')">Order Now</button>
+                </div>
+                <div class="category-card">
+                    <img src="/img/Event.jpg" alt="Event Reservation" class="category-img">
+                    <h3>🎉 Events Reservation</h3>
+                    <p>Book our venue for your special occasions.</p>
+                    <button class="btn card-btn" onclick="openForm('eventForm')">Book Event</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation-forms">
+            <div id="menuForm" class="reservation-form" style="display: none;">
+                <h2>Menu Reservation</h2>
+                <form onsubmit="return handleSubmit('menuForm')">
+                    <input type="text" id="menu-name" placeholder="Enter your name" required />
+                    <input type="email" id="menu-email" placeholder="Enter your email" required />
+                    <input type="tel" id="menu-phone" placeholder="Enter your phone number" required />
+                    <input type="date" id="menu-date" required />
+                    <input type="time" id="menu-time" required />
+                    <input type="number" id="menu-guests" placeholder="Number of guests" required />
+                    <textarea id="menu-request" placeholder="Special requests (optional)" rows="4"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div id="orderForm" class="reservation-form" style="display: none;">
+                <h2>Order Pickup</h2>
+                <form onsubmit="return handleSubmit('orderForm')">
+                    <input type="text" id="pickup-name" placeholder="Enter your name" required />
+                    <input type="email" id="pickup-email" placeholder="Enter your email" required />
+                    <input type="tel" id="pickup-phone" placeholder="Enter your phone number" required />
+                    <textarea id="pickup-items" placeholder="Enter your order details" rows="4" required></textarea>
+                    <input type="date" id="pickup-date" required />
+                    <input type="time" id="pickup-time" required />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div id="eventForm" class="reservation-form" style="display: none;">
+                <h2>Event Booking</h2>
+                <form onsubmit="return handleSubmit('eventForm')">
+                    <input type="text" id="event-name" placeholder="Enter your name" required />
+                    <input type="email" id="event-email" placeholder="Enter your email" required />
+                    <input type="tel" id="event-phone" placeholder="Enter your phone number" required />
+                    <input type="date" id="event-date" required />
+                    <textarea id="event-details" placeholder="Describe your event" rows="4" required></textarea>
+                    <input type="number" id="event-guests" placeholder="Number of attendees" required />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
     <div id="footer"></div>
 </body>
+
 </html>

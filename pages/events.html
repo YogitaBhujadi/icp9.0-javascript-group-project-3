@@ -4,18 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Restaurant - Events</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/events.css">
-    <script src="/js/events.js" ></script>
-    <script src="/js/index.js" defer></script>
+    <link rel="icon" type="image/png" href="/img/Logo icon.png">
+    <link rel="stylesheet" href="./../css/index.css">
+    <link rel="stylesheet" href="./../css/events.css">
+    <script src="./../js/events.js" ></script>
+    <script src="/../js/index.js" defer></script>
 </head>
 <body>
     <div id="navbar"></div>
     <main>
-        <h1>Upcoming Events</h1>
+        <h1> Our Upcoming Events</h1>
+        
+         <!-- Add event details here -->
+
+         
+            <img src="./../img/2.jpg" class="img1" id=/>
+            
+ <p class="heading">If you have a specific date in mind and are planning a standard event, you may choose to DIRECT BOOK. Otherwise, to discuss availability, pricing, and other specific needs, please choose INQUIRE NOW and we’ll be in touch soon. </p>
+        <button class="direct-book" onclick="openModel()">DIRECT BOOK</button>
+        <div class="overlay" id="overlay">
+            <div class="model">
+                <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModel()"/>
+                <form class="form" action="submit_form.php" method="POST">
+                    <h1 class="form-header"> Book an Event</h1>
+                        <h1 class="form-header">Please select the area and time for your event</h1>
+                        
+                        <label for="name">Select an area for your event</label>
+                        <input type="text"
+                         placeholder="Select..." 
+                        class="form-input"
+                           id="name"
+                        name="name"
+                        required/>
+                        
+                      
+                        <label for="email">No. of guest</label>
+                    <input type="number" class="form-input"
+                   
+                    />
+                    
+                    <button type="button" class="btn" onclick="closeModel()" > Submit </button>
+            </div>
+        </div>
+        <button class="inquire-now" type="button"  onclick="openModal()">INQUIRE NOW</button>
+        <div class="reservation-form" id="eventForm">
+            <div class="modal">
+                <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModal()"/>
+                <form onsubmit="return handleSubmit('eventForm')" class="form">
+                    <h1 class="form-header">
+                        Your Contact Information</h1>
+                     <input type="text" id="event-name" placeholder="Enter your name" class="form-input" required/><br>
+                     <input type="email" id="event-email"  placeholder="Enter your email" class="form-input"  required/><br>
+                    <input type="tel" id="event-phone" placeholder="Enter your phone number" class="form-input" required/>
+                    <p>In order to submit your personal information you must agree to and accept the terms of Hot N Fast privacy policy.</p>
+                <h1 class="form-header">Your Event Details</h1>
+                <input type="text" id="event-name" placeholder="Event description" class="form-input" required/><br>
+                <input type="date" id="event-date" class="form-input" required /><br>
+                <input type="time" id="event-time"  class="form-input" required/>
+               <br>
+                <input type="number" id="event-guests" placeholder="Number of guests" class="form-input" required/><br>
+                <button type="submit" onclick="closeModal()" >Submit </button>
+                </form>
+            </div>
+        </div>
+
+    
         <p>Stay updated on our latest events and activities!</p>
-        <!-- Add event details here -->
+        <div class="container">
+        <img src="./../img/event/business events.jpg" class="business" />
+        <h3><i> <u>BUSINESS EVENTS </u></i></h3>
+    <p> Our Restaurant can host a variety of business events, including corporate events, conferences, and board meetings. </p></div>
+    
+        <div class="container">
+        <img src="./../img/event/dinner.jpg" class="dinner"/> 
+        <h3><i><u>DINNER EVENTS</u></i></h3>
+        <p>In modern use dinner and supper both usually refer to the main meal of the day eaten in the evening, with dinner being the slightly more formal word. </p>
+    </div>
+    
+        <div class="container">
+        <img src="./../img/event/party.jpg" class="party"/>
+        <h3><i><u>PARTY EVENTS</u></i></h3>
+        <p>A casual event where guests can play board games while enjoying snacks and drinks</p></div>
+    
+        <div class="container">
+        <img src="./../img/event/private events.jpg" class="private"/>
+        <h3><i><u>PRIVATE EVENTS</u></i></h3>
+    <p>Private dining offers a customizable experience with personalized service, and the ability to tailor the menu and ambiance to your preferences. </p></div>
+    
+        <div class="container">
+            <img src="./../img/event/wedding.jpg" class="wedding"/>
+            <h3><i><u>WEDDING EVENTS</u></i></h3>
+        <p>Restaurants can be a good venue for weddings because they can offer cost savings, have multiple areas for different activities, bar, and servers</p></div>
+        
+            <div class="container">
+                <img src="./../img/event/baby shower.jpg" class="baby-shower"/>
+                <h3><i><u>BABY SHOWER EVENTS</u></i></h3>
+            <p>A baby shower is a gathering to celebrate the upcoming birth of a baby. It typically includes games, treats, and a warm atmosphere.</p></div>
+            
+
+        
+        
     </main>
     <div id="footer"></div>
-</body>+
+</body>
 </html>

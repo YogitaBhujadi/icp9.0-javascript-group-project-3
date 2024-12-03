@@ -1,0 +1,331 @@
+.main_container {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: green; */
+}
+.restaurant-hall-img {
+  width: 100px;
+  height: 500px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.hamburger {
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.sidebar {
+  background-color: #f2f2f2;
+  width: 170px;
+  height: 100vh;
+  box-shadow: 0px 0px 10px 5px rgba(0px, 0px, 0px, 0.5);
+  visibility: hidden;
+}
+.icon {
+  padding: 4px;
+  font-size: 20px;
+}
+.menu_item {
+  padding: 5px;
+
+  margin: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  align-items: end;
+  display: flex;
+}
+.menu_item:hover {
+  background-color: white;
+  border-radius: 0px 25px 25px 0px;
+  border: 0.5px solid grey;
+}
+.text {
+  font-size: 20px;
+  margin-left: 10px;
+  color: black;
+  text-decoration: none;
+}
+.the-hotn-text {
+  display: block;
+
+  margin: 30px auto;
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+.the-hotn-text:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+p {
+  line-height: 1.5;
+}
+.ourstory {
+  background-image: url("../img/restaurant-hall.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 550px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 6px 50px 0px 50px;
+}
+.ourstory:hover {
+  margin: 20px;
+  transition: 2s;
+  transform: scale(1.1);
+  border-radius: 30px;
+}
+.overlay-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.theburger_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 70px 70px auto;
+  background-color: white;
+}
+.theburger_container:hover {
+  transform: scale(1.1);
+  transition: 3s;
+}
+.burger_def {
+  width: 45%;
+  height: 300px;
+  background-color: #f6f6ee;
+  text-align: center;
+  margin: 10px;
+}
+.burger-heading {
+  text-decoration: overline;
+  text-decoration: underline;
+}
+.burger_text {
+  line-height: 1.5;
+  font-size: 17px;
+  margin: 12px;
+  text-align: center;
+}
+.burgerimg {
+  margin: 10px;
+  width: 540px;
+  border-radius: 20px;
+}
+.conitainer {
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+  margin: 50px auto;
+  position: relative;
+}
+.img {
+  width: 900px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.icon {
+  height: 35px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5;
+  top: 42%;
+}
+
+.backimg {
+  height: 43px;
+  left: 0;
+}
+.nextimg {
+  height: 35px;
+  right: 0;
+}
+.backimg:hover {
+  transform: scale(0.9) translateX(-8px);
+}
+.nextimg:hover {
+  transform: scale(0.9) translateX(8px);
+}
+.contact_container {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  text-decoration: none;
+}
+.contact {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+.heading-center {
+  text-align: center;
+}
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+.contact-form:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.contact-form button {
+  background: #d33f49;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #b32e37;
+}
+.conitainer {
+  width: fit-content;
+  margin: 50px auto;
+  position: relative;
+}
+.img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.icon {
+  height: 55px;
+  position: absolute;
+  cursor: pointer;
+  transition: 1.2;
+  top: 42%;
+}
+
+.backimg {
+  height: 43px;
+  left: 0;
+}
+.nextimg {
+  height: 35px;
+  right: 0;
+}
+.backimg:hover {
+  transform: scale(0.9) translateX(-8px);
+}
+.nextimg:hover {
+  transform: scale(0.9) translateX(8px);
+}
+.overlay {
+  background-color: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.cookies-container {
+  display: flex;
+}
+.cookieimg {
+  width: 40px;
+  height: 50px;
+  margin-right: 30px;
+}
+.closeimg {
+  width: 15px;
+  height: 20px;
+  margin-left: 75px;
+  padding: 10px;
+}
+.model {
+  display: block;
+  margin: 10px auto;
+  padding: 20px;
+  width: 380px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: wheat;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 5px 7px 2px grey;
+}
+.button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 35px;
+}
+#acceptBtn {
+  background-color: orange;
+}
+.read_container {
+  width: 500px;
+  /* height: 500px; */
+  display: block;
+  margin: 20px auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.read_container:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+.rea_def {
+  text-decoration: none;
+  color: black;
+  /* text-shadow: 1px 2px 2px black; */
+  cursor: pointer;
+  font-size: 25px;
+}
+.read {
+  display: block;
+  margin-top: 30px auto;
+}
+.clickhere {
+  width: 40px;
+  padding: 2px;
+}

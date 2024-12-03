@@ -1,0 +1,174 @@
+:root {
+    --width-circle: 150vw;
+}
+
+.slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+    position: relative;
+    margin-top: -50px;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: transform 0.8s;
+}
+
+.slider .list .item {
+    width: calc(var(--radius) * 2);
+    text-align: center;
+    transition: transform 1s;
+}
+
+.slider .list .item img {
+    width: 90%;
+    filter: drop-shadow(0 0 20px #000);
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 1px solid #eee9;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 15;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-items: center; 
+    align-items: center;   
+    margin-top: 50px;  
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 250px; 
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.offer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.food-name {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+
+
+.title{
+  font-size: 24px;
+  margin: 30px;
+}
+.offer-cards{
+  display: flex;
+   
+}
+
+.offer-2{
+  text-decoration: none;
+  color: black;
+  
+}
+.cards {
+  height: 350px;
+  width: 250px;
+  display: flex;  /* Added flex to allow content to be centered */
+  flex-direction: column;  /* Optional, just to align content vertically inside the card */
+  justify-content: space-evenly;  /* Ensures space is properly distributed */
+  margin: 40px auto;  /* Centers the card horizontally and adds vertical space */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 1px 1px 15px 2px rgb(171, 170, 170);
+  
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.card-header{
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.cards-pts{
+  margin: 7px;
+}
+
+.card-img{
+  display: block;
+  margin: 5px auto;
+  height: 220px;
+  width: 200px;
+  
+}
+.price{
+  text-decoration: none;
+  padding: 6px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+
+}
