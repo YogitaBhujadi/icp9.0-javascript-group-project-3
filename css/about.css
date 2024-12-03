@@ -329,3 +329,79 @@ p {
   width: 40px;
   padding: 2px;
 }
+
+/* Mobile device */
+@media screen and (max-width: 500px) {
+  .ourstory {
+    width: 80%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 6px 50px 0px 50px;
+  }
+
+  .overlay-text {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .the-hotn-text {
+    width: 300px;
+    font-size: 12px;
+  }
+  .burger_def {
+    display: none;
+  }
+  .burgerimg {
+    width: 270px;
+  }
+  .read_container {
+    width: 300px;
+    
+    
+  }
+  .rea_def {
+    
+    font-size: 18px;
+  }
+  
+  .clickhere {
+    width: 20px;
+  }
+  .conitainer {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    margin: 50px auto;
+    position: relative;
+  }
+  .img {
+    width: 900px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .icon {
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.5;
+    top: 42%;
+  }
+
+  .backimg {
+    height: 43px;
+    left: 0;
+  }
+  .nextimg {
+    height: 35px;
+    right: 0;
+  }
+  .theburger_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 70px auto;
+    background-color: white;
+  }
+}
