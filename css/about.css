@@ -1,8 +1,7 @@
-.main_container {
+/* .main_container {
   display: flex;
   justify-content: space-around;
-  /* background-color: green; */
-}
+} */
 .restaurant-hall-img {
   width: 100px;
   height: 500px;
@@ -69,25 +68,28 @@ p {
   background-size: cover;
   background-position: center;
   width: 80%;
+  display: block;
+  margin: 10px auto;
+  margin-left: 100px;
   height: 550px;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 6px 50px 0px 50px;
+  /* margin: 10px auto; */
 }
-.ourstory:hover {
+/* .ourstory:hover {
   margin: 20px;
   transition: 2s;
-  transform: scale(1.1);
-  border-radius: 30px;
-}
+  transform: scale(1.1); 
+   border-radius: 30px;
+} */
 .overlay-text {
   font-size: 48px;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .theburger_container {
@@ -123,7 +125,7 @@ p {
   width: 540px;
   border-radius: 20px;
 }
-.conitainer {
+.img-container {
   display: block;
   margin: 20px auto;
   width: fit-content;
@@ -192,7 +194,7 @@ p {
   color: #333;
 }
 .contact-form label {
-  display: block;
+  display: flex;
   margin-bottom: 5px;
   font-weight: bold;
   color: #555;
@@ -207,13 +209,13 @@ p {
   border-radius: 4px;
 }
 .contact-form button {
-  background: #d33f49;
+  background: black;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 .contact-form button:hover {
-  background: #b32e37;
+  background: blue;
 }
 .conitainer {
   width: fit-content;
@@ -328,4 +330,298 @@ p {
 .clickhere {
   width: 40px;
   padding: 2px;
+}
+
+/* Mobile device */
+@media screen and (min-width: 300px) and (max-width: 550px) {
+  .ourstory {
+    width: 80%;
+    height: 300px;
+  }
+
+  .overlay-text {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .the-hotn-text {
+    width: 300px;
+    font-size: 14px;
+  }
+  .burger_def {
+    display: none;
+  }
+  .burgerimg {
+    width: 330px;
+  }
+  .read_container {
+    width: 300px;
+  }
+  .rea_def {
+    font-size: 19px;
+  }
+
+  .clickhere {
+    width: 20px;
+  }
+
+  .contact {
+    font-size: 17px;
+  }
+  .heading-center {
+    text-align: center;
+  }
+  .contact-form {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .img {
+    width: 450px;
+    height: 350px;
+  }
+  .icon {
+    height: 15px;
+  }
+
+  .backimg {
+    height: 33px;
+  }
+  .nextimg {
+    height: 33px;
+  }
+  .contact-form h2 {
+    font-size: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .cookieimg {
+    width: 25px;
+    height: 30px;
+    margin-right: 30px;
+  }
+  .closeimg {
+    width: 10px;
+    height: 15px;
+  }
+  .model {
+    width: 280px;
+    height: 200px;
+  }
+
+  .button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 28px;
+  }
+  .heading-center {
+    font-size: 14px;
+  }
+}
+
+/* Tab device 700px*/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .ourstory {
+    width: 90%;
+    height: 400px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .overlay-text {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .the-hotn-text {
+    width: 400px;
+    font-size: 16px;
+  }
+  .theburger_container {
+    width: 90%;
+  }
+  .burger_def {
+    display: none;
+  }
+  .burgerimg {
+    width: 500px;
+    height: 300px;
+  }
+  .read_container {
+    width: 500px;
+  }
+  .rea_def {
+    font-size: 20px;
+  }
+
+  .clickhere {
+    width: 27px;
+  }
+
+  .contact {
+    font-size: 23px;
+  }
+  .heading-center {
+    text-align: center;
+  }
+  .contact-form {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .img {
+    width: 550px;
+    height: 450px;
+  }
+  .icon {
+    height: 23px;
+  }
+
+  .backimg {
+    height: 44px;
+  }
+  .nextimg {
+    height: 44px;
+  }
+  .contact-form h2 {
+    font-size: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .cookieimg {
+    width: 30px;
+    height: 35px;
+    margin-right: 30px;
+  }
+  .closeimg {
+    width: 18px;
+    height: 20px;
+  }
+  .model {
+    width: 300px;
+    height: 230px;
+  }
+
+  .button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+  }
+  .heading-center {
+    font-size: 20px;
+  }
+}
+
+/* Tab device 700px*/
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .ourstory {
+    width: 90%;
+    height: 500px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .overlay-text {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+  .the-hotn-text {
+    width: 500px;
+    font-size: 19px;
+  }
+  .theburger_container {
+    width: 95%;
+  }
+  .burger_def {
+    display: none;
+  }
+  .burgerimg {
+    width: 600px;
+    height: 400px;
+  }
+  .read_container {
+    width: 550px;
+  }
+  .rea_def {
+    font-size: 23px;
+  }
+
+  .clickhere {
+    width: 30px;
+  }
+
+  .contact {
+    font-size: 30px;
+  }
+  .heading-center {
+    text-align: center;
+  }
+  .contact-form {
+    max-width: 500px;
+    width: 95%;
+  }
+
+  .img {
+    width: 580px;
+    height: 480px;
+  }
+  .icon {
+    height: 26px;
+  }
+
+  .backimg {
+    height: 48px;
+  }
+  .nextimg {
+    height: 48px;
+  }
+  .contact-form h2 {
+    font-size: 25px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 99%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .cookieimg {
+    width: 35px;
+    height: 38px;
+    margin-right: 30px;
+  }
+  .closeimg {
+    width: 20px;
+    height: 22px;
+  }
+  .model {
+    width: 350px;
+    height: 250px;
+  }
+
+  .button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
+  }
+  .heading-center {
+    font-size: 25px;
+  }
 }
