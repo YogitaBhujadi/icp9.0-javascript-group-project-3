@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,51 @@
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/index.js" defer></script>
 </head>
+
 <body>
+    <!-- Sidebar -->
+    <i class="fa-solid fa-bars hamburger-menu" onclick="openSiderbar()" id="hamburger-menu"></i>
+    <div class="sidebar" id="sidebar">
+        <div class="close-menu" onclick="closeSidebar()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <!-- First Menu -->
+        <div class="menu-item">
+            <i class="fa-solid fa-house menu-icon"></i>
+            <a href="#" class="menu-text">Home</a>
+        </div>
+        <!-- Secound Menu -->
+        <div class="menu-item">
+            <i class="fa-solid fa-address-card menu-icon"></i>
+            <a href="#" class="menu-text">About</a>
+        </div>
+        <!-- Third Menu -->
+        <div class="menu-item">
+            <i class="fa-regular fa-address-book menu-icon"></i>
+            <a href="#" class="menu-text">Contact</a>
+        </div>
+        <!-- Fourth Menu -->
+        <div class="menu-item">
+            <i class="fa-solid fa-cart-shopping menu-icon"></i>
+            <a href="#" class="menu-text">Cart</a>
+        </div>
+        <!-- Fifth Menu -->
+        <div class="menu-item">
+            <i class="fa-solid fa-right-from-bracket menu-icon"></i>
+            <a href="#" class="menu-text">Logout</a>
+        </div>
+    </div>
     <div id="navbar"></div>
     <main class="hero-section">
-        <div class="hero-content"> 
-        <img src="./img/img1.jpg" alt="" class="silde" id="slide">
-        <div>
-        <h1>Welcome to </h1>
-        <p>Discover our delicious menu and amazing events!</p></div>
+        <div class="hero-content">
+            <img src="./img/img1.jpg" alt="" class="silde" id="slide">
+            <div>
+                <h1>Welcome to </h1>
+                <p>Discover our delicious menu and amazing events!</p>
+            </div>
         </div>
-        <img src="./img/left.png" alt="" class="ico-action icon-prev" onclick="prev()"/>
-        <img src="./img/right.png" alt="" class=" ico-action icon-next" onclick="next()"/>
+        <img src="./img/left.png" alt="" class="ico-action icon-prev" onclick="prev()" />
+        <img src="./img/right.png" alt="" class=" ico-action icon-next" onclick="next()" />
     </main>
     <p class="para">Welcome Back to HOT N' FAST</p>
     <!-- container-2 -->
@@ -44,8 +79,8 @@
         <div class="left-box">
             <img src="./img/card2.jpg" alt="" class="content-img">
         </div>
-     </div>
-     <!-- container-4 -->
+    </div>
+    <!-- container-4 -->
     <div class="container-2">
         <div class="img-box">
             <img src="./img/card3.jpg" alt="" class="content-img">
@@ -57,8 +92,8 @@
             <button class="content-btn"><a href="./pages/events.html" class="btn-des">BOOK EVENTS</a></button>
         </div>
     </div>
-      <!-- container-5 -->
-      <div class="container-3">
+    <!-- container-5 -->
+    <div class="container-3">
         <div class="right-box">
             <div class="menu-header">
                 <h1>ONLINE ORDER</h1>
@@ -68,8 +103,9 @@
         <div class="left-box">
             <img src="./img/card4.jpg" alt="" class="content-img">
         </div>
-     </div>
-     
+    </div>
     <div id="footer"></div>
+    <script src="https://kit.fontawesome.com/f80ec2f635.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
