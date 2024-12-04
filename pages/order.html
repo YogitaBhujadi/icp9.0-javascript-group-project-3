@@ -19,9 +19,9 @@
         <p>Place your order and enjoy our food at home!</p>
     </main>
     <div class="center">
-        <button type="button" class="btn1" id="search">All</button>
-        <button type="button" class="btn1" id="search1">Veg</button>
-        <button type="button" class="btn1" id="search2">Non-Veg</button>
+        <button type="button" class="btn1" onclick="filter('')">All</button>
+        <button type="button" class="btn1" onclick="filter1('Veg')">Veg</button>
+        <button type="button" class="btn1" onclick="filter2('Meat')">Non-Veg</button>
     </div>
     <div id="students-container"></div>
     <i class="fa-solid fa-bars hamburger-menu" id="hamburger-menu" onclick="openSidebar()"></i>
@@ -149,6 +149,43 @@
             </div>
         </div>
         <div class="card-img">
+            <img src="./../img/order/egg-cheese-omelette.jpeg" class="img" />
+            <h3 class="product-title">Cheesy Omelette(Meat)</h3>
+            <p class="product-title">Price:109/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec6()"></i>
+                <span id="quantity6">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc6()"></i>
+            </div>
+            <button onclick="selectBox()" class="btn" id="addToCart6">Add To Cart</button>
+            <button onclick="openModel()" class="btn">Order Now</button>
+            <div class="overlay" id="overlay6">
+                <div class="model">
+                    <i class="fa-solid fa-circle-xmark close-icon" alt="Close" onclick="closeModel()"></i>
+                    <form class="form">
+                        <h1>Buy Now</h1>
+                        <input type="text" placeholder="Enter your name" class="form-input" />
+                        <input type="text" placeholder="Enter your phone number" class="form-input" />
+                        <input type="text" placeholder="Enter your address" class="form-input" />
+                        <input type="text" placeholder="Enter quantity" class="form-input" />
+                        <input type="text" placeholder="Select payment method" list="state" class="form-input" />
+                        <datalist id="state">
+                            <option>Phonepay</option>
+                            <option>Google Pay</option>
+                            <option>Credit Card</option>
+                            <option>Debit Card</option>
+                            <option>Cash on delivery</option>
+                        </datalist>
+                    </form>
+                    <div>
+                        <button type="button" class="btn1" id="overlay6" onclick="alertMsg()">
+                            Proceed
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-img">
             <img src="./../img/order/veggie-pasta.webp" class="img" />
             <h3 class="product-title">Veggie Pasta</h3>
             <p class="product-title">Price:199/-</p>
@@ -187,7 +224,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/chicken-lollipop.jpg" class="img" />
-            <h3 class="product-title">Chicken Lollipop</h3>
+            <h3 class="product-title">Chicken Lollipop (Meat)</h3>
             <p class="product-title">Price:349/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec3()"></i>
@@ -224,7 +261,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/biryani1.webp" class="img" />
-            <h3 class="product-title">Chicken Biryani</h3>
+            <h3 class="product-title">Chicken Biryani(Meat)</h3>
             <p class="product-title">Price:399/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec4()"></i>
@@ -261,7 +298,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/black-colored-burger.jpeg" class="img" />
-            <h3 class="product-title">Black Burger</h3>
+            <h3 class="product-title">Black Burger(Veg)</h3>
             <p class="product-title">Price:149/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec5()"></i>
@@ -296,46 +333,10 @@
                 </div>
             </div>
         </div>
-        <div class="card-img">
-            <img src="./../img/order/egg-cheese-omelette.jpeg" class="img" />
-            <h3 class="product-title">Egg Omelette With Cheese</h3>
-            <p class="product-title">Price:109/-</p>
-            <div class="quantity-container">
-                <i class="fa-solid fa-minus quantity-icon" onclick="dec6()"></i>
-                <span id="quantity6">1</span>
-                <i class="fa-solid fa-plus quantity-icon" onclick="inc6()"></i>
-            </div>
-            <button onclick="selectBox()" class="btn" id="addToCart6">Add To Cart</button>
-            <button onclick="openModel()" class="btn">Order Now</button>
-            <div class="overlay" id="overlay6">
-                <div class="model">
-                    <i class="fa-solid fa-circle-xmark close-icon" alt="Close" onclick="closeModel()"></i>
-                    <form class="form">
-                        <h1>Buy Now</h1>
-                        <input type="text" placeholder="Enter your name" class="form-input" />
-                        <input type="text" placeholder="Enter your phone number" class="form-input" />
-                        <input type="text" placeholder="Enter your address" class="form-input" />
-                        <input type="text" placeholder="Enter quantity" class="form-input" />
-                        <input type="text" placeholder="Select payment method" list="state" class="form-input" />
-                        <datalist id="state">
-                            <option>Phonepay</option>
-                            <option>Google Pay</option>
-                            <option>Credit Card</option>
-                            <option>Debit Card</option>
-                            <option>Cash on delivery</option>
-                        </datalist>
-                    </form>
-                    <div>
-                        <button type="button" class="btn1" id="overlay6" onclick="alertMsg()">
-                            Proceed
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="card-img">
             <img src="./../img/order/fish-salad.jpeg" class="img" />
-            <h3 class="product-title">Fish Salad</h3>
+            <h3 class="product-title">Fish Salad(Meat)</h3>
             <p class="product-title">Price:399/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec7()"></i>
@@ -372,7 +373,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/noodles-with-shrimp.jpeg" class="img" />
-            <h3 class="product-title">Noodles With Shrimp</h3>
+            <h3 class="product-title">Noodles Shrimp(Meat)</h3>
             <p class="product-title">Price:299/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec8()"></i>
@@ -409,7 +410,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/meat-with-fries.jpeg" class="img" />
-            <h3 class="product-title">Meat With Fries</h3>
+            <h3 class="product-title">Meat With Fries(Meat)</h3>
             <p class="product-title">Price:699/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec9()"></i>
@@ -446,7 +447,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/pizza-with-tomatoes-green-leaves.jpeg" class="img" />
-            <h3 class="product-title">Tomato Pizza</h3>
+            <h3 class="product-title">Tomato Pizza(Veg)</h3>
             <p class="product-title">Price:299/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec10()"></i>
@@ -483,7 +484,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/bread-and-greens-in-brisbane.jpeg" class="img" />
-            <h3 class="product-title">Bread Brisbane</h3>
+            <h3 class="product-title">Bread Brisbane(Veg)</h3>
             <p class="product-title">Price:799/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec11()"></i>
@@ -520,7 +521,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/burger-with-cheese.jpeg" class="img" />
-            <h3 class="product-title">Cheese Burger</h3>
+            <h3 class="product-title">Cheese Burger(Veg)</h3>
             <p class="product-title">Price:199/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec12()"></i>
@@ -557,7 +558,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/langoustines-with-beer-on-canary-islands.jpeg" class="img" />
-            <h3 class="product-title">Langoustines</h3>
+            <h3 class="product-title">Langoustines(Meat)</h3>
             <p class="product-title">Price:999/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec13()"></i>
@@ -594,7 +595,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/stir-fry-noodles.jpeg" class="img" />
-            <h3 class="product-title">Stir Fry Noodles</h3>
+            <h3 class="product-title">Stir Fry Noodles(Veg)</h3>
             <p class="product-title">Price:299/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec14()"></i>
@@ -631,7 +632,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/Green-salad.jpeg" class="img" />
-            <h3 class="product-title">Green Salad</h3>
+            <h3 class="product-title">Green Salad(Veg)</h3>
             <p class="product-title">Price:399/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec15()"></i>
@@ -668,7 +669,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/Grilled-skewers.jpeg" class="img" />
-            <h3 class="product-title">Grilled Skewers</h3>
+            <h3 class="product-title">Grilled Skewers(Meat)</h3>
             <p class="product-title">Price:699/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec16()"></i>
@@ -705,7 +706,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/ramen-with-toppings.jpeg" class="img" />
-            <h3 class="product-title">Ramen With Toppings</h3>
+            <h3 class="product-title">Ramen Toppings(Meat)</h3>
             <p class="product-title">Price:899/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec17()"></i>
@@ -742,7 +743,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/caesar-salad-with-egg-and-parmesan.jpeg" class="img" />
-            <h3 class="product-title">Caesar egg salad</h3>
+            <h3 class="product-title">Caesar egg salad(Meat)</h3>
             <p class="product-title">Price:499/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec18()"></i>
@@ -779,7 +780,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/sandwich-fries.jpeg" class="img" />
-            <h3 class="product-title">Sandwich With Fries</h3>
+            <h3 class="product-title">Sandwich With Fries(Veg)</h3>
             <p class="product-title">Price:599/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec19()"></i>
@@ -816,7 +817,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/sushi-frying-balls.jpeg" class="img" />
-            <h3 class="product-title">Sushi With Frying Balls</h3>
+            <h3 class="product-title">Sushi With Balls(Veg)</h3>
             <p class="product-title">Price:599/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec20()"></i>
@@ -853,7 +854,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/momos.jpg" class="img" />
-            <h3 class="product-title">Momos</h3>
+            <h3 class="product-title">Momos(Veg)</h3>
             <p class="product-title">Price:499/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec21()"></i>
@@ -890,7 +891,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/sushi-with-caviar.jpeg" class="img" />
-            <h3 class="product-title">Sushi With caviar</h3>
+            <h3 class="product-title">Sushi With caviar(Veg)</h3>
             <p class="product-title">Price:399/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec22()"></i>
@@ -927,7 +928,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/fried-chicken-sticks.jpeg" class="img" />
-            <h3 class="product-title">Fried Chicken Sticks</h3>
+            <h3 class="product-title">Fried Chicken(Meat)</h3>
             <p class="product-title">Price:499/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec23()"></i>
@@ -964,7 +965,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/chicken-bread.jpeg" class="img" />
-            <h3 class="product-title">Chicken Bread</h3>
+            <h3 class="product-title">Chicken Bread(Meat)</h3>
             <p class="product-title">Price:399/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec24()"></i>
@@ -1001,7 +1002,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/taco-wrap.jpeg" class="img" />
-            <h3 class="product-title">Taco Wrap</h3>
+            <h3 class="product-title">Taco Wrap(Veg)</h3>
             <p class="product-title">Price:999/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec25()"></i>
@@ -1038,7 +1039,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/wraps-fries.jpeg" class="img" />
-            <h3 class="product-title">Wraps And Fries</h3>
+            <h3 class="product-title">Wraps And Fries(Veg)</h3>
             <p class="product-title">Price:599/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec26()"></i>
@@ -1075,7 +1076,7 @@
         </div>
         <div class="card-img">
             <img src="./../img/order/chicken-fried-potato.jpeg" class="img" />
-            <h3 class="product-title">Chicken With Potatos</h3>
+            <h3 class="product-title">Potato Chicken(Meat)</h3>
             <p class="product-title">Price:499/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec27()"></i>
@@ -1104,80 +1105,6 @@
                     </form>
                     <div>
                         <button type="button" class="btn1" id="overlay27" onclick="alertMsg()">
-                            Proceed
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card-img">
-            <img src="./../img/order/Fried-potato.jpeg" class="img" />
-            <h3 class="product-title">Fried Potato</h3>
-            <p class="product-title">Price:499/-</p>
-            <div class="quantity-container">
-                <i class="fa-solid fa-minus quantity-icon" onclick="dec28()"></i>
-                <span id="quantity28">1</span>
-                <i class="fa-solid fa-plus quantity-icon" onclick="inc28()"></i>
-            </div>
-            <button onclick="selectBox()" class="btn" id="addToCart28">Add To Cart</button>
-            <button onclick="openModel()" class="btn">Order Now</button>
-            <div class="overlay" id="overlay28">
-                <div class="model">
-                    <i class="fa-solid fa-circle-xmark close-icon" alt="Close" onclick="closeModel()"></i>
-                    <form class="form">
-                        <h1>Buy Now</h1>
-                        <input type="text" placeholder="Enter your name" class="form-input" />
-                        <input type="text" placeholder="Enter your phone number" class="form-input" />
-                        <input type="text" placeholder="Enter your address" class="form-input" />
-                        <input type="text" placeholder="Enter quantity" class="form-input" />
-                        <input type="text" placeholder="Select payment method" list="state" class="form-input" />
-                        <datalist id="state">
-                            <option>Phonepay</option>
-                            <option>Google Pay</option>
-                            <option>Credit Card</option>
-                            <option>Debit Card</option>
-                            <option>Cash on delivery</option>
-                        </datalist>
-                    </form>
-                    <div>
-                        <button type="button" class="btn1" id="overlay28" onclick="alertMsg()">
-                            Proceed
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card-img">
-            <img src="./../img/order/chicken-sauce.jpeg" class="img" />
-            <h3 class="product-title">Chicken</h3>
-            <p class="product-title">Price:4999/-</p>
-            <div class="quantity-container">
-                <i class="fa-solid fa-minus quantity-icon" onclick="dec29()"></i>
-                <span id="quantity29">1</span>
-                <i class="fa-solid fa-plus quantity-icon" onclick="inc29()"></i>
-            </div>
-            <button onclick="selectBox()" class="btn" id="addToCart29">Add To Cart</button>
-            <button onclick="openModel()" class="btn">Order Now</button>
-            <div class="overlay" id="overlay29">
-                <div class="model">
-                    <i class="fa-solid fa-circle-xmark close-icon" alt="Close" onclick="closeModel()"></i>
-                    <form class="form">
-                        <h1>Buy Now</h1>
-                        <input type="text" placeholder="Enter your name" class="form-input" />
-                        <input type="text" placeholder="Enter your phone number" class="form-input" />
-                        <input type="text" placeholder="Enter your address" class="form-input" />
-                        <input type="text" placeholder="Enter quantity" class="form-input" />
-                        <input type="text" placeholder="Select payment method" list="state" class="form-input" />
-                        <datalist id="state">
-                            <option>Phonepay</option>
-                            <option>Google Pay</option>
-                            <option>Credit Card</option>
-                            <option>Debit Card</option>
-                            <option>Cash on delivery</option>
-                        </datalist>
-                    </form>
-                    <div>
-                        <button type="button" class="btn1" id="overlay29" onclick="alertMsg()">
                             Proceed
                         </button>
                     </div>
