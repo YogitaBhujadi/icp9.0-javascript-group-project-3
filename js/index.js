@@ -1,7 +1,6 @@
 // Inject the navbar dynamically
 document.getElementById("navbar").innerHTML = `
     <div class="navbar-container">
-        <img src="../img/sidebar.png" alt="sidebar" class="sidebar">
         <img src="../img/Logo.png" alt="Logo" class="navbar-logo">
         <div class="navbar-links">
             <a href="../index.html">Home</a>
@@ -107,4 +106,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(next, 3000);
 });
+
+// sidebar
+function openSiderbar(){
+    const sidebarElement = document.getElementById('sidebar');
+    sidebarElement.style.display = 'block';
+
+    const hamburgerMenuElement = document.getElementById('hamburger-menu');
+    hamburgerMenuElement.style.display = 'none'
+}
+function closeSidebar(){
+    const sidebarElement = document.getElementById('sidebar');
+    sidebarElement.style.display = 'none';
+
+    const hamburgerMenuElement = document.getElementById('hamburger-menu');
+    hamburgerMenuElement.style.display = 'block'
+}
 
