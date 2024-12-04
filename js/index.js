@@ -45,10 +45,10 @@ document.getElementById("footer").innerHTML = `
                             <img src="/img/facebook.png" alt="facebook" class="fb">
                         </a>
                         <a href="https://chat.whatsapp.com/" style="text-decoration: none;"><img
-                                src="/img/whatsapp.png" alt="whatsapp" class="fb">
+                                src="/img/Whatsapp.png" alt="whatsapp" class="fb">
                         </a>
                         <a href="https://www.youtube.com/" style="text-decoration: none;"><img
-                                src="/img/youtube.png" alt="youtube" class="fb">
+                                src="/img/Youtube.png" alt="youtube" class="fb">
                         </a>
                         <a href="https://www.instagram.com/" style="text-decoration: none;">
                             <img src="/img/instagram.png" alt="instagram" class="fb">
