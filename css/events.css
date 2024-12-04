@@ -36,8 +36,8 @@
 }
 
 .reservation-form button[type="submit"] {
-    background-color: rgb(241, 239, 241);
-    color: rgb(11, 1, 1);
+    background-color:black ;
+    color: white;
     font-size: 24px;
     padding: 10px 30px;
     display: block;
@@ -49,6 +49,7 @@
 }
 
 .reservation-form button[type="submit"]:hover {
+    background-color:#AF8260 ;
     cursor: pointer;
     transform: translateY(-5px);
     transition: 0.5s;
@@ -62,7 +63,7 @@ width: 1500px;
 
 .direct-book{
 margin-top: 30px;
-  background-color:  #53132f;
+background-color:  black;
   color: #fff;
   font-weight: bold;
   padding: 10px 20px;
@@ -74,12 +75,12 @@ margin-top: 30px;
 }
 
 .direct-book:hover{
-    background-color: black;
+    background-color: #AF8260 ;
 }
 
 .inquire-now{
     margin-top: 30px;
-  background-color:  #53132f;
+  background-color: black;
   color: #fff;
   font-weight: bold;
   padding: 10px 20px;
@@ -91,7 +92,7 @@ margin-top: 30px;
 
 }
 .inquire-now:hover{
-    background-color: black;
+    background-color:#AF8260 ;
     
 }
 
@@ -212,8 +213,8 @@ margin-top: 30px;
 }
 
 .btn{
-    background-color: rgb(241, 239, 241);
-    color: rgb(11, 1, 1);
+    background-color: black ;
+    color: white;
     font-size: 24px;
     padding: 10px 30px;
     display: block;
@@ -223,6 +224,7 @@ margin-top: 30px;
 }
 
 .btn:hover{
+    background-color: #AF8260 ;
     cursor: pointer;
     transform: translateY(-5px);
     transition: 0.5s;

@@ -12,6 +12,7 @@ function closeModel() {
 }
 
 
+
 function openModal() {
     const eventFormElement = document.getElementById('eventForm');
     eventFormElement.style.display = 'flex';
@@ -21,6 +22,7 @@ function closeModal() {
     const eventFormElement = document.getElementById('eventForm');
     eventFormElement.style.display = 'none';
 }
+
 
 
 function openForm(formId) {
@@ -33,6 +35,7 @@ function openForm(formId) {
     const selectedForm = document.getElementById(formId);
     selectedForm.style.display = 'block';
 }
+
 
 function handleSubmit(formId) {
 
@@ -48,4 +51,10 @@ function handleSubmit(formId) {
     document.getElementById(formId).reset();
 
     return false;
+}
+
+function alertMsg() {
+    const overlayElement = document.getElementById('overlay1');
+    overlayElement.style.display = 'none';
+    alert("🎉 Your reservation has been confirmed!")
 }
