@@ -240,11 +240,23 @@ body {
         top: 230px;
         right: 600px;
     }
+    .hamburger-menu {
+        position: fixed;
+        top: 40px;
+        left: 10px;
+        cursor: pointer;
+    }
+    .navbar-links {
+        display: none;
+    }
+    .img-box,.left-box{
+        display: none;
+    }
     
 }
 
 
-@media screen and (min-width:601px) and (max-width:950px) {
+@media screen and (min-width:781px) and (max-width:950px) {
     .btn1 {
         border-radius: 12px;
         margin: 12px;
@@ -259,9 +271,10 @@ body {
         margin-left:270px;
     }
     .navbar-logo {
-        height: 60px;
+        height: 30px;
         margin-right: 10px;
         margin-left: 5px;
+        margin-bottom:7px;
     }
     .hamburger-menu {
         position: fixed;
@@ -269,6 +282,5 @@ body {
         left: 20px;
         cursor: pointer;
     }
-    
     
 }
