@@ -1,8 +1,7 @@
-.main_container {
+/* .main_container {
   display: flex;
   justify-content: space-around;
-  /* background-color: green; */
-}
+} */
 .restaurant-hall-img {
   width: 100px;
   height: 500px;
@@ -69,11 +68,14 @@ p {
   background-size: cover;
   background-position: center;
   width: 80%;
+  display: block;
+  margin: 10px auto;
+  margin-left: 100px;
   height: 550px;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 6px 50px 0px 50px;
+  /* margin: 10px auto; */
 }
 /* .ourstory:hover {
   margin: 20px;
@@ -87,7 +89,7 @@ p {
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .theburger_container {
@@ -123,7 +125,7 @@ p {
   width: 540px;
   border-radius: 20px;
 }
-.conitainer {
+.img-container {
   display: block;
   margin: 20px auto;
   width: fit-content;
@@ -196,7 +198,6 @@ p {
   margin-bottom: 5px;
   font-weight: bold;
   color: #555;
-
 }
 .contact-form input,
 .contact-form textarea,
@@ -214,7 +215,7 @@ p {
   cursor: pointer;
 }
 .contact-form button:hover {
-  background: #b32e37;
+  background: blue;
 }
 .conitainer {
   width: fit-content;
@@ -430,6 +431,8 @@ p {
   .ourstory {
     width: 90%;
     height: 400px;
+    display: block;
+    margin: 10px auto;
   }
 
   .overlay-text {
@@ -526,8 +529,10 @@ p {
 /* Tab device 700px*/
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .ourstory {
-    width: 95%;
+    width: 90%;
     height: 500px;
+    display: block;
+    margin: 10px auto;
   }
 
   .overlay-text {
