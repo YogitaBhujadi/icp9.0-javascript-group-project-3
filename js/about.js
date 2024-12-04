@@ -26,7 +26,6 @@ const imgarray = [
   "../img/christmas.jpg",
   "../img/hygin.jpg",
   "../img/buger.jpg",
-  "../img/img3.jpg",
 ];
 let index = 0;
 const slide = document.getElementById("slide");

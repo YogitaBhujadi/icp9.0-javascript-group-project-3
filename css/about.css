@@ -192,10 +192,11 @@ p {
   color: #333;
 }
 .contact-form label {
-  display: block;
+  display: flex;
   margin-bottom: 5px;
   font-weight: bold;
   color: #555;
+
 }
 .contact-form input,
 .contact-form textarea,
@@ -207,7 +208,7 @@ p {
   border-radius: 4px;
 }
 .contact-form button {
-  background: #d33f49;
+  background: black;
   color: #fff;
   border: none;
   cursor: pointer;
