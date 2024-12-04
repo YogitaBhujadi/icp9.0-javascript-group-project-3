@@ -19,6 +19,10 @@
 .product-title {
     text-align: center;
 }
+.product-price {
+    text-align: center;
+}
+
 
 .quantity-icon {
     height: 20px;
@@ -39,7 +43,7 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    margin: 40px;
+    margin: 95px;
     flex-wrap: wrap;
 }
 
@@ -48,6 +52,7 @@
     width: 250px;
     height: 370px;
     border-radius: 20px;
+    margin-left:20px;
     margin-bottom: 30px;
     background-color: white;
     ;
@@ -133,95 +138,67 @@ body {
     margin: 0;
     padding: 0;
 }
-
-.sidebar {
-    border-right: 1px solid #ccc;
-    background-color: rgb(242, 237, 237);
-    height: 100vh;
-    width: 250px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-    visibility: hidden;
-    position: fixed;
-    top: 10px;
-}
-
-.menu-item {
-    padding: 5px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: end;
-    cursor: pointer;
-    border-radius: 0 25px 25px 0;
-}
-
-.menu-item:hover {
-    background-color: white;
-    border: 1px solid black;
-}
-
-.menu-item1 {
-    padding: 5px;
-    padding-left: 10px;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: end;
-    cursor: pointer;
-    border-radius: 0 25px 25px 0;
-}
-
-.menu {
-    padding: 5px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    border-radius: 0 25px 25px 0;
-    position: absolute;
-    top: 2px;
-    left: 15px;
-}
-
-.menu-icon {
-    font-size: 20px;
-}
-
-.menu-text {
-    text-decoration: none;
-    color: #000;
-    margin-left: 5px;
-}
-
-.hamburger-menu {
-    position: fixed;
-    top: 40px;
-    left: 50px;
-    cursor: pointer;
-}
-
-.close-menu {
-    text-align: right;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.side {
-    margin-left: 60px;
-
-    margin-top: 15px;
-    border-radius: 50%;
-    position: absolute;
-    border: 3px solid black;
-}
-
-.length {
-    margin-top: 45px;
-}
-
-.length1 {
-    margin-top: 7px;
-}
-
 .text {
     font-size: 10px;
     color: white;
     text-decoration: none;
+}
+
+
+@media screen and (max-width:600px) {
+    .btn1 {
+        border-radius: 9px;
+        margin: 10px;
+        padding:13px;
+        font-size: 12px;
+        width: 28x;
+    }
+    .center {
+       position: static;
+        top: 230px;
+        right: 600px;
+    }
+    .hamburger-menu {
+        position: fixed;
+        top: 40px;
+        left: 10px;
+        cursor: pointer;
+    }
+    .navbar-links {
+        display: none;
+    }
+    .img-box,.left-box{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width:781px) and (max-width:950px) {
+    .btn1 {
+        border-radius: 12px;
+        margin: 12px;
+        padding:15px;
+        font-size: 15px;
+        width: 30x;
+    }
+    .center {
+       position:static;
+        top: 230px;
+        right: 600px;
+        margin-left:270px;
+    }
+    .navbar-logo {
+        height: 30px;
+        margin-right: 10px;
+        margin-left: 5px;
+        margin-bottom:7px;
+    }
+    .hamburger-menu {
+        position: fixed;
+        top: 40px;
+        left: 20px;
+        cursor: pointer;
+    }
+    
 }

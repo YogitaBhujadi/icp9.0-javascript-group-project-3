@@ -1,18 +1,3 @@
-// Sidebar
-function openSidebar() {
-    const sidebarElement = document.getElementById('sidebar');
-    sidebarElement.style.visibility = 'visible';
-    const hamburgerMenuElement = document.getElementById('hamburger-menu');
-    hamburgerMenuElement.style.visibility = 'hidden';
-}
-function closeSidebar() {
-    const sidebarElement = document.getElementById('sidebar');
-    sidebarElement.style.visibility = 'hidden';
-    const hamburgerMenuElement = document.getElementById('hamburger-menu');
-    hamburgerMenuElement.style.visibility = 'visible';
-}
-
-
 //Increment Decrement 
 const quantElement = document.getElementById('quantity');
 function inc() {
@@ -350,30 +335,7 @@ function dec27() {
         quantElement27.innerText = --quantity27;
     }
 }
-const quantElement28 = document.getElementById('quantity28');
-function inc28() {
-    let quantity28 = parseInt(quantElement28.innerText);
-    quantElement28.innerText = ++quantity28;
-}
 
-function dec28() {
-    let quantity28 = parseInt(quantElement28.innerText);
-    if (quantity28 > 1) {
-        quantElement28.innerText = --quantity28;
-    }
-}
-const quantElement29 = document.getElementById('quantity29');
-function inc29() {
-    let quantity29 = parseInt(quantElement29.innerText);
-    quantElement29.innerText = ++quantity29;
-}
-
-function dec29() {
-    let quantity29 = parseInt(quantElement29.innerText);
-    if (quantity29 > 1) {
-        quantElement29.innerText = --quantity29;
-    }
-}
 
 
 // Dialog Box
@@ -546,4 +508,48 @@ function alertMsg() {
 
 
 // Veg,Non-Veg Button
+function filter(Price) {
+    
+    const cardelement = document.querySelectorAll('.card-img');
+    
+    cardelement.forEach(card => {
+        
+        const productName = card.querySelector('.product-price').textContent;
 
+        if (productName.includes(Price)) {
+            card.style.display = 'block';  
+        } else {
+            card.style.display = 'none';  
+             }
+    });
+}
+function filter1(Veg) {
+    
+    const cardelement1 = document.querySelectorAll('.card-img');
+    
+    cardelement1.forEach(card1 => {
+        
+        const productName1 = card1.querySelector('.product-title').textContent;
+
+        if (productName1.includes(Veg)) {
+            card1.style.display = 'block';  
+        } else {
+            card1.style.display = 'none';  
+        }
+    });
+}
+function filter2(Meat) {
+    
+    const cardelement2 = document.querySelectorAll('.card-img');
+    
+    cardelement2.forEach(card2 => {
+        
+        const productName2 = card2.querySelector('.product-title').textContent;
+
+        if (productName2.includes(Meat)) {
+            card2.style.display = 'block';  
+        } else {
+            card2.style.display = 'none';  
+        }
+    });
+}
