@@ -39,7 +39,7 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    margin: 40px;
+    margin: 95px;
     flex-wrap: wrap;
 }
 
@@ -227,24 +227,48 @@ body {
 }
 
 
-
-
 @media screen and (max-width:600px) {
     .btn1 {
-        border-radius: 8px;
-        margin: 6px;
-        padding:10px;
-        font-size: 9px;
-        width: 20x;
+        border-radius: 9px;
+        margin: 10px;
+        padding:13px;
+        font-size: 12px;
+        width: 28x;
     }
     .center {
+       position: static;
         top: 230px;
-        right: 300px;
+        right: 600px;
     }
     
 }
 
 
 @media screen and (min-width:601px) and (max-width:950px) {
+    .btn1 {
+        border-radius: 12px;
+        margin: 12px;
+        padding:15px;
+        font-size: 15px;
+        width: 30x;
+    }
+    .center {
+       position:static;
+        top: 230px;
+        right: 600px;
+        margin-left:270px;
+    }
+    .navbar-logo {
+        height: 60px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    .hamburger-menu {
+        position: fixed;
+        top: 40px;
+        left: 20px;
+        cursor: pointer;
+    }
+    
     
 }
