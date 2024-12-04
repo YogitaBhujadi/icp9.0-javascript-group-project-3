@@ -20,17 +20,24 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 function searchMenu() {
-    const searchInput = document.getElementById('searchBar').value.toLowerCase();
+    const searchInput = document.getElementById('searchBar').value.toLowerCase().trim();
     const menuItems = document.querySelectorAll('.menu-item');
+    let found = false; 
 
     menuItems.forEach(item => {
-        const itemName = item.querySelector('h3').textContent.toLowerCase(); 
+        const itemName = item.querySelector('h3').textContent.toLowerCase();
         if (itemName.includes(searchInput)) {
             item.style.display = 'block';
+            found = true; 
         } else {
             item.style.display = 'none';
         }
     });
+
+    // Show alert if no items match and input is not empty
+    if (!found && searchInput !== '') {
+        alert('No matching menu item found. Please type a valid menu name.');
+    }
 }
 
 // Carousel JS

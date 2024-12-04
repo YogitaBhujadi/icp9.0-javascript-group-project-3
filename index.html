@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/Logo.png">
+    <link rel="icon" type="image/png" href="img/Logo icon.png">
     <title>Food Restaurant - Home</title>
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/index.js" defer></script>
 </head>
+
 <body>
-    <div id="navbar"></div>
+    <!-- Sidebar -->
+    <i class="fa-solid fa-bars hamburger-menu" onclick="openSiderbar()" id="hamburger-menu"></i>
+    <div class="sidebar" id="sidebar">
+        <div class="close-menu" onclick="closeSidebar()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <!-- First Menu -->
+        <div class="menu-item">
+            <i class="fa-solid fa-house menu-icon"></i>
+            <a href="#" class="menu-text">Home</a>
+        </div>
+        <!-- Secound Menu -->
+        <div class="menu-item">
+            <i class="fa-solid fa-address-card menu-icon"></i>
+            <a href="./pages/about.html" class="menu-text">About</a>
+        </div>
+        <!-- Third Menu -->
+        <div class="menu-item">
+            <i class="fa-regular fa-square-caret-down menu-icon"></i>
+            <a href="./pages/menu.html" class="menu-text">Menu</a>
+        </div>
+        <!-- Fourth Menu -->
+        <div class="menu-item">
+            <i class="fa-regular fa-envelope-open menu-icon"></i>
+            <a href="./pages/offers.html" class="menu-text">Offer</a>
+        </div>
+        <!-- Fifth Menu -->
+        <div class="menu-item">
+            <i class="fa-solid fa-sort menu-icon"></i>
+            <a href="./pages/order.html" class="menu-text">Order</a>
+        </div>
+        <!-- Fifth Menu -->
+        <div class="menu-item">
+            <i class="fa-regular fa-calendar-days  menu-icon"></i>
+            <a href="./pages/events.html" class="menu-text">Event</a>
+        </div>
+        <!-- Fifth Menu -->
+        <div class="menu-item">
+            <i class="fa-solid fa-book menu-icon"></i>
+            <a href="./pages/reservation.html" class="menu-text">Reservation</a>
+        </div>
+    </div>
     <div id="navbar"></div>
     <main class="hero-section">
-        <div class="hero-content"> 
-        <img src="./img/img1.jpg" alt="" class="silde" id="slide">
-        <div>
-        <h1></h1>
-        <p>Discover our delicious menu and amazing events!</p></div>
+        <div class="hero-content">
+            <img src="./img/img1.jpg" alt="" class="silde" id="slide">
+            <div>
+                <h1>Welcome to </h1>
+                <p>Discover our delicious menu and amazing events!</p>
+            </div>
         </div>
-        <img src="./img/left.png" alt="" class="ico-action icon-prev" onclick="prev()"/>
-        <img src="./img/right.png" alt="" class=" ico-action icon-next" onclick="next()"/>
+        <img src="./img/left.png" alt="" class="ico-action icon-prev" onclick="prev()" />
+        <img src="./img/right.png" alt="" class=" ico-action icon-next" onclick="next()" />
     </main>
     <p class="para">Welcome Back to HOT N' FAST</p>
     <!-- container-2 -->
@@ -45,8 +89,8 @@
         <div class="left-box">
             <img src="./img/card2.jpg" alt="" class="content-img">
         </div>
-     </div>
-     <!-- container-4 -->
+    </div>
+    <!-- container-4 -->
     <div class="container-2">
         <div class="img-box">
             <img src="./img/card3.jpg" alt="" class="content-img">
@@ -58,8 +102,8 @@
             <button class="content-btn"><a href="./pages/events.html" class="btn-des">BOOK EVENTS</a></button>
         </div>
     </div>
-      <!-- container-5 -->
-      <div class="container-3">
+    <!-- container-5 -->
+    <div class="container-3">
         <div class="right-box">
             <div class="menu-header">
                 <h1>ONLINE ORDER</h1>
@@ -69,8 +113,9 @@
         <div class="left-box">
             <img src="./img/card4.jpg" alt="" class="content-img">
         </div>
-     </div>
-     
+    </div>
     <div id="footer"></div>
+    <script src="https://kit.fontawesome.com/f80ec2f635.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

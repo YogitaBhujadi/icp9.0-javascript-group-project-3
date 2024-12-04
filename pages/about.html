@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Restaurant - About Us</title>
-    <link rel="icon" type="image/png" href="/img/Logo.png" />
+    <link rel="icon" type="image/png" href="/img/Logo icon.png" />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/about.css" />
     <script src="/js/about.js"></script>
@@ -93,73 +93,67 @@
           </p>
         </div>
 
-        <a
-          href="https://www.mashed.com/1134075/the-story-behind-the-rise-and-fall-of-hot-n-now/"
-        >
-          <img src="../img/tap.png" alt="" class="clickhere"
-        /></a>
-      </div>
-      <div class="carousel-container">
-        <div class="carousel">
-          <div class="overlay" id="overlayid">
-            <div class="model">
-              <div class="cookies-container">
-                <img src="../img/cookie.png" alt="" class="cookieimg" />
-                <h2 class="heading-center">Cookies Consent</h2>
-                <img
-                  src="../img/close.png"
-                  alt="close"
-                  class="closeimg"
-                  onclick="closeModel()"
-                />
-              </div>
-              <p class="">
-                This website use cookies to help you have a superior and more
-                relevant browsing experience on the website.
-              </p>
-              <div class="buttons">
-                <button class="button" id="acceptBtn" onclick="acceptBtn()">
-                  Accept
-                </button>
-                <button class="button" id="declineBtn" onclick="dectBtn()">
-                  Decline
-                </button>
-              </div>
+      <a
+        href="https://www.mashed.com/1134075/the-story-behind-the-rise-and-fall-of-hot-n-now/"
+      >
+        <img src="../img/tap.png" alt="" class="clickhere"
+      /></a>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="overlay" id="overlayid">
+          <div class="model">
+            <div class="cookies-container">
+              <img src="../img/cookie.png" alt="" class="cookieimg" />
+              <h2 class="heading-center">Cookies Consent</h2>
+              <img
+                src="../img/close.png"
+                alt="close"
+                class="closeimg"
+                onclick="closeModel()"
+              />
             </div>
-          </div>
-
-          <div class="conitainer">
-            <img
-              src="../img/friends.jpg"
-              alt="friends"
-              class="img"
-              id="slide"
-            />
-            <img
-              src="../img/back.png"
-              alt="back"
-              class="icon backimg"
-              onclick="back()"
-            />
-            <img
-              src="../img/next.png"
-              alt="next"
-              class="icon nextimg"
-              onclick="next()"
-            />
+            <p class="">
+              This website use cookies to help you have a superior and more
+              relevant browsing experience on the website.
+            </p>
+            <div class="buttons">
+              <button class="button" id="acceptBtn" onclick="acceptBtn()">
+                Accept
+              </button>
+              <button class="button" id="declineBtn" onclick="dectBtn()">
+                Decline
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <form class="contact-form">
-        <h2 class="heading-center">Contact Us</h2>
-        <label for="name">Name*</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          required
+      <div class="conitainer">
+        <img src="../img/friends.jpg" alt="friends" class="img" id="slide" />
+        <img
+          src="../img/back.png"
+          alt="back"
+          class="icon backimg"
+          onclick="back()"
         />
+        <img
+          src="../img/next.png"
+          alt="next"
+          class="icon nextimg"
+          onclick="next()"
+        />
+      </div>
+    </div>
+    <form class="contact-form" action="submit_form.php" method="POST">
+      <h2 class="heading-center">Contact Us</h2>
+      <label for="name">Name*</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
 
         <label for="email">Email*</label>
         <input

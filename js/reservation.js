@@ -1,26 +1,58 @@
 function openForm(formId) {
-    
     const forms = document.querySelectorAll('.reservation-form');
-    forms.forEach(function(form) {
-        form.style.display = 'none';
+    forms.forEach((form) => {
+        form.style.display = 'none'; 
     });
-    
-    const selectedForm = document.getElementById(formId);
-    selectedForm.style.display = 'block';
+    document.getElementById(formId).style.display = 'block';
 }
 
+
 function handleSubmit(formId) {
+    let reservationData = {};
 
-    const name = document.getElementById(formId + '-name').value;
-    const email = document.getElementById(formId + '-email').value;
-    const phone = document.getElementById(formId + '-phone').value;
-    const date = document.getElementById(formId + '-date').value;
-    const time = document.getElementById(formId + '-time').value;
-    const guests = document.getElementById(formId + '-guests').value;
+    if (formId === 'menuForm') {
+        reservationData = {
+            name: document.getElementById('menu-name').value,
+            email: document.getElementById('menu-email').value,
+            phone: document.getElementById('menu-phone').value,
+            date: document.getElementById('menu-date').value,
+            time: document.getElementById('menu-time').value,
+            guests: document.getElementById('menu-guests').value,
+            request: document.getElementById('menu-request').value,
+        };
+    } else if (formId === 'orderForm') {
+        reservationData = {
+            name: document.getElementById('pickup-name').value,
+            email: document.getElementById('pickup-email').value,
+            phone: document.getElementById('pickup-phone').value,
+            items: document.getElementById('pickup-items').value,
+            date: document.getElementById('pickup-date').value,
+            time: document.getElementById('pickup-time').value,
+        };
+    } else if (formId === 'eventForm') {
+        reservationData = {
+            name: document.getElementById('event-name').value,
+            email: document.getElementById('event-email').value,
+            phone: document.getElementById('event-phone').value,
+            date: document.getElementById('event-date').value,
+            details: document.getElementById('event-details').value,
+            guests: document.getElementById('event-guests').value,
+        };
+    }
 
-    alert(`🎉 Your reservation has been confirmed! We can't wait to see you soon. 😊\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nGuests: ${guests}`);
+    const storedReservations = JSON.parse(localStorage.getItem('reservations')) || {}
 
-    document.getElementById(formId).reset();
+    storedReservations[formId] = reservationData;
+
+    localStorage.setItem('reservations', JSON.stringify(storedReservations));
+
+    alert("Reservation is successful! 🎉");
 
     return false;
+}
+
+function displayReservations() {
+    const storedReservations = JSON.parse(localStorage.getItem('reservations')) || {};
+    console.log('Stored Reservations:', storedReservations);
+    alert(JSON.stringify(storedReservations, null, 2)); 
 }

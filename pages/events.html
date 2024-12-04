@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Restaurant - Events</title>
-    <link rel="icon" type="image/png" href="/img/Logo.png">
+    <link rel="icon" type="image/png" href="/img/Logo icon.png">
     <link rel="stylesheet" href="./../css/index.css">
     <link rel="stylesheet" href="./../css/events.css">
     <script src="./../js/events.js" ></script>
-    <script src="/js/index.js" defer></script>
+    <script src="/../js/index.js" defer></script>
 </head>
 <body>
     <div id="navbar"></div>
@@ -16,45 +16,58 @@
         <h1> Our Upcoming Events</h1>
         
          <!-- Add event details here -->
-        <img src="./../img/event/rehearsal-dinners.webp" class="img1" />
-        <p class="heading">If you have a specific date in mind and are planning a standard event, you may choose to DIRECT BOOK. Otherwise, to discuss availability, pricing, and other specific needs, please choose INQUIRE NOW and we’ll be in touch soon. </p>
+
+         
+            <img src="./../img/2.jpg" class="img1" id=/>
+            
+ <p class="heading">If you have a specific date in mind and are planning a standard event, you may choose to DIRECT BOOK. Otherwise, to discuss availability, pricing, and other specific needs, please choose INQUIRE NOW and we’ll be in touch soon. </p>
         <button class="direct-book" onclick="openModel()">DIRECT BOOK</button>
         <div class="overlay" id="overlay">
             <div class="model">
                 <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModel()"/>
-                <form class="form">
+                <form class="form" action="submit_form.php" method="POST">
                     <h1 class="form-header"> Book an Event</h1>
-                        <h1 class="form-header">Please select the area and time for your event</h1>
-                        <p>Select an area for your event</p>
+                        <h1 class="form-header">Please select the area and guests for your event</h1>
                         
-                        <input type="name" placeholder="Select..." class="form-input"/>
-                        <p>Number of Guests</p>
-                    <input type="text" class="form-input"/>
-                    <p>Minimum guest count is 9 guests. provided doesn't meet our minimum required number of guests.</p>
-                    <button type="button" class="btn" onclick="closeModel()">Submit </button>
+                        <label for="name">Select an area for your event</label>
+                        <input type="text"
+                         placeholder="Select..." 
+                        class="form-input"
+                           id="name"
+                        name="name"
+                        required/>
+                        
+                      
+                        <label for="email">No. of guest</label>
+                    <input type="number" class="form-input"
+                   
+                    />
+                    
+                    <button type="button" class="btn" id="overlay1" onclick="alertMsg()" > Submit </button>
             </div>
         </div>
         <button class="inquire-now" type="button"  onclick="openModal()">INQUIRE NOW</button>
-        <div class="division" id="division">
+        <div class="reservation-form" id="eventForm">
             <div class="modal">
                 <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModal()"/>
-                <form class="form">
+                <form onsubmit="return handleSubmit('eventForm')" class="form">
                     <h1 class="form-header">
                         Your Contact Information</h1>
-                     <input type="name" placeholder="Enter your name" class="form-input"/><br>
-                    <input type="email" placeholder="Enter your email" class="form-input"/><br>
-                    <input type="text" placeholder="Enter your phone number" class="form-input"/>
+                     <input type="text" id="event-name" placeholder="Enter your name" class="form-input" required/><br>
+                     <input type="email" id="event-email"  placeholder="Enter your email" class="form-input"  required/><br>
+                    <input type="tel" id="event-phone" placeholder="Enter your phone number" class="form-input" required/>
                     <p>In order to submit your personal information you must agree to and accept the terms of Hot N Fast privacy policy.</p>
+                <h1 class="form-header">Your Event Details</h1>
+                <input type="text" id="event-name" placeholder="Event description" class="form-input" required/><br>
+                <input type="date" id="event-date" class="form-input" required /><br>
+                <input type="time" id="event-time"  class="form-input" required/>
+               <br>
+                <input type="number" id="event-guests" placeholder="Number of guests" class="form-input" required/><br>
+                <button type="submit"  id="overlay2" onclick="alertMsg()" >Submit </button>
                 </form>
-                <h1>Your Event Details</h1>
-                 <input type="text" placeholder="Enter your event date" class="form-input"/>
-                <p>Start Time & End Time</p>
-                <input type="text" placeholder="6:00pm - 9:00pm" class="form-input"/>
-                 <input type="text" placeholder="No. of people" class="form-input"/>
-                <button type="button" class="btn"  onclick="closeModal()">Submit </button>
             </div>
         </div>
-        
+
     
         <p>Stay updated on our latest events and activities!</p>
         <div class="container">
