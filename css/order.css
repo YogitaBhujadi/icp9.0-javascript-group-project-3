@@ -19,6 +19,10 @@
 .product-title {
     text-align: center;
 }
+.product-price {
+    text-align: center;
+}
+
 
 .quantity-icon {
     height: 20px;

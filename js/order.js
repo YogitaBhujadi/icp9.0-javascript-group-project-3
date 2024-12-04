@@ -523,15 +523,15 @@ function alertMsg() {
 
 
 // Veg,Non-Veg Button
-function filter() {
+function filter(Price) {
     
     const cardelement = document.querySelectorAll('.card-img');
     
     cardelement.forEach(card => {
         
-        const productName = card.querySelector('.product-title').textContent;
+        const productName = card.querySelector('.product-price').textContent;
 
-        if (productName.includes()) {
+        if (productName.includes(Price)) {
             card.style.display = 'block';  
         } else {
             card.style.display = 'none';  
