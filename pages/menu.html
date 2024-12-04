@@ -1,219 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Restaurant - Menu</title>
-    <link rel="icon" type="image/png" href="/img/Logo icon.png">
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/menu.css" />
-    <!-- Font Awesome CDN -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <script src="/js/menu.js"></script>
-    <script src="/js/index.js" defer></script>
-  </head>
-  <body>
-    <div id="navbar"></div>
-    <main>
-      <!-- Add menu items here -->
-      <h1>Our Restaurant Menu🍴</h1>
-      <!-- Navbar -->
-      <nav>
-        <ul>
-          <li><a href="#" onclick="filterMenu('all')">All</a></li>
-          <li><a href="#" onclick="filterMenu('appetizers')">Appetizers</a></li>
-          <li><a href="#" onclick="filterMenu('main')">Main Courses</a></li>
-          <li><a href="#" onclick="filterMenu('desserts')">Desserts</a></li>
-        </ul>
-      </nav>
-      <input
-        type="text"
-        id="searchBar"
-        placeholder="Search for your dish...😋🍴🥗"
-        oninput="searchMenu()"
-      />
-<!-- Carousel -->
-      <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="../img/Butter-chicken.jpg" alt="Slide 1">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/Grilled-chicken.jpg" alt="Slide 2">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/Ice-cream.jpg" alt="Slide 3">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/Mutton-Biryani.jpg" alt="Slide 4">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/Pastry.avif" alt="Slide 5">
-          </div>
-        </div>
-        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Restaurant - Menu</title>
+  <link rel="icon" type="image/png" href="/img/Logo icon.png">
+
+  <link rel="stylesheet" href="/css/menu.css" />
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <script src="/js/menu.js"></script>
+  <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <main>
+
+
+    <div class="menu-nav">
+      <div class="menu-nav-div-1">
+        <h1>Our Restaurant Menu🍴</h1>
       </div>
-      
+      <div class="menu-nav-div-2">
+        <nav>
+          <ul>
+            <li><a href="#" onclick="filterMenu('all')">All</a></li>
+            <li><a href="#" onclick="filterMenu('appetizers')">Appetizers</a></li>
+            <li><a href="#" onclick="filterMenu('main')">Main Courses</a></li>
+            <li><a href="#" onclick="filterMenu('desserts')">Desserts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu-nav-div-3">
+        <input type="text" id="searchBar" placeholder="Search for your dish...😋🍴🥗" oninput="searchMenu()" />
+      </div>
+    </div>
 
-      <!-- Menu content -->
-      <div class="menu" id="menu">
-        <div class="menu-item dessert" onclick="showDetails()">
-          <img src="../img/Brownie.jpeg" alt="Brownie" class="menu-image" />
-          <h3>Brownie</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.5★</span>
-            <span class="price">₹230 for one</span>
-          </div>
+
+    <!-- Carousel -->
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="../img/Butter-chicken.jpg" alt="Slide 1">
         </div>
-
-        <div class="menu-item dessert" onclick="showDetails()">
-          <img
-            src="../img/Bruschetta.jpeg"
-            alt="Bruschetta"
-            class="menu-image"
-          />
-          <h3>Bruschetta</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.5★</span>
-            <span class="price">₹200 for one</span>
-          </div>
+        <div class="carousel-item">
+          <img src="../img/Grilled-chicken.jpg" alt="Slide 2">
         </div>
-
-        <div class="menu-item main" onclick="showDetails()">
-          <img
-            src="../img/Butter-chicken.jpg"
-            alt="Butter Chicken"
-            class="menu-image"
-          />
-          <h3>Butter Chiken</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.5★</span>
-            <span class="price">₹250 for one</span>
-          </div>
+        <div class="carousel-item">
+          <img src="../img/Ice-cream.jpg" alt="Slide 3">
         </div>
-
-        <div class="menu-item appetizers" onclick="showDetails()">
-          <img
-            src="../img/Crab-chips.jpg"
-            alt="Crab Chips"
-            class="menu-image"
-          />
-          <h3>Crab Chips</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.5★</span>
-            <span class="price">₹300 for one</span>
-          </div>
+        <div class="carousel-item">
+          <img src="../img/Mutton-Biryani.jpg" alt="Slide 4">
         </div>
-
-        <div class="menu-item main" onclick="showDetails()">
-          <img src="../img/Dal-tadka.jpeg" alt="Dal Tadka" class="menu-image" />
-          <h3>Dal Tadka</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.5★</span>
-            <span class="price">₹250 for one</span>
-          </div>
+        <div class="carousel-item">
+          <img src="../img/Pastry.avif" alt="Slide 5">
         </div>
+      </div>
+      <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+      <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
 
-        <div class="menu-item desserts" onclick="showDetails()">
-          <img src="../img/Ice-cream.jpg" alt="Ice cream" class="menu-image" />
-          <h3>Ice cream</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.5★</span>
-            <span class="price">₹80 for one</span>
-          </div>
-        </div>
 
-        <div class="menu-item desserts" onclick="showDetails()">
-          <img src="../img/Shakes.jpeg" alt="Shakes" class="menu-image" />
-          <h3>Shakes</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.5★</span>
-            <span class="price">₹200 for one</span>
-          </div>
-        </div>
-
-        <div class="menu-item appetizers" onclick="showDetails()">
-          <img
-            src="../img/Spring-Roll.jpg"
-            alt="Spring ROll"
-            class="menu-image"
-          />
-          <h3>Spring Roll</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.5★</span>
-            <span class="price">₹80 for one</span>
-          </div>
-        </div>
-
-        <div class="menu-item main" onclick="showDetails()">
-          <img
-            src="../img/Kaju-paneer.jpg"
-            alt="Kaju Paneer"
-            class="menu-image"
-          />
-          <h3>Kaju Paneer</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.3★</span>
-            <span class="price">₹400 for one</span>
-          </div>
-        </div>
-
-        <div class="menu-item main" onclick="showDetails()">
-          <img
-            src="../img/Mutton-Biryani.jpg"
-            alt="Mutton Biryani"
-            class="menu-image"
-          />
-          <h3>Mutton Biryani</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.3★</span>
-            <span class="price">₹350 for one</span>
-          </div>
-        </div>
-
-        <div class="menu-item desserts" onclick="showDetails()">
-          <img src="../img/Pastry.jpeg" alt="Pastry" class="menu-image" />
-          <h3>Pastry</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.3★</span>
-            <span class="price">₹60 for one</span>
-          </div>
-        </div>
-
-        <div class="menu-item appetizers" onclick="showDetails()">
-          <img
-            src="../img/Mushroom-Burger.jpeg"
-            alt="Mashroom Burger"
-            class="menu-image"
-          />
-          <h3>Mashroom Burger</h3>
-          <p>Pune's Hot N' Fast Restaurant</p>
-          <div class="menu-details">
-            <span class="rating">4.2★</span>
-            <span class="price">₹200 for one</span>
-          </div>
+    <!-- Menu content -->
+    <div class="menu" id="menu">
+      <div class="menu-item dessert" onclick="showDetails()">
+        <img src="../img/Brownie.jpeg" alt="Brownie" class="menu-image" />
+        <h3>Brownie</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.5★</span>
+          <span class="price">₹230 for one</span>
         </div>
       </div>
 
-      
+      <div class="menu-item dessert" onclick="showDetails()">
+        <img src="../img/Bruschetta.jpeg" alt="Bruschetta" class="menu-image" />
+        <h3>Bruschetta</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.5★</span>
+          <span class="price">₹200 for one</span>
+        </div>
+      </div>
 
-    </main>
-    <!-- footer -->
-    <div id="footer"></div>
-  </body>
+      <div class="menu-item main" onclick="showDetails()">
+        <img src="../img/Butter-chicken.jpg" alt="Butter Chicken" class="menu-image" />
+        <h3>Butter Chiken</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.5★</span>
+          <span class="price">₹250 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item appetizers" onclick="showDetails()">
+        <img src="../img/Crab-chips.jpg" alt="Crab Chips" class="menu-image" />
+        <h3>Crab Chips</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.5★</span>
+          <span class="price">₹300 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item main" onclick="showDetails()">
+        <img src="../img/Dal-tadka.jpeg" alt="Dal Tadka" class="menu-image" />
+        <h3>Dal Tadka</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.5★</span>
+          <span class="price">₹250 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item desserts" onclick="showDetails()">
+        <img src="../img/Ice-cream.jpg" alt="Ice cream" class="menu-image" />
+        <h3>Ice cream</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.5★</span>
+          <span class="price">₹80 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item desserts" onclick="showDetails()">
+        <img src="../img/Shakes.jpeg" alt="Shakes" class="menu-image" />
+        <h3>Shakes</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.5★</span>
+          <span class="price">₹200 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item appetizers" onclick="showDetails()">
+        <img src="../img/Spring-roll.avif" alt="Spring ROll" class="menu-image" />
+        <h3>Spring Roll</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.5★</span>
+          <span class="price">₹80 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item main" onclick="showDetails()">
+        <img src="../img/Kaju-paneer.jpg" alt="Kaju Paneer" class="menu-image" />
+        <h3>Kaju Paneer</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.3★</span>
+          <span class="price">₹400 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item main" onclick="showDetails()">
+        <img src="../img/Mutton-biryani.jpg" alt="Mutton Biryani" class="menu-image" />
+        <h3>Mutton Biryani</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.3★</span>
+          <span class="price">₹350 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item desserts" onclick="showDetails()">
+        <img src="../img/Pastry.jpeg" alt="Pastry" class="menu-image" />
+        <h3>Pastry</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.3★</span>
+          <span class="price">₹60 for one</span>
+        </div>
+      </div>
+
+      <div class="menu-item appetizers" onclick="showDetails()">
+        <img src="../img/Mushroom-Burger.jpeg" alt="Mashroom Burger" class="menu-image" />
+        <h3>Mashroom Burger</h3>
+        <p>Pune's Hot N' Fast Restaurant</p>
+        <div class="menu-details">
+          <span class="rating">4.2★</span>
+          <span class="price">₹200 for one</span>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <!-- footer -->
+  <div id="footer"></div>
+</body>
+
 </html>
