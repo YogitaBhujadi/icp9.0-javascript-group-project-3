@@ -1,3 +1,4 @@
+
 //Increment Decrement 
 const quantElement = document.getElementById('quantity');
 function inc() {
@@ -520,8 +521,8 @@ function filter(Price) {
             card.style.display = 'block';  
         } else {
             card.style.display = 'none';  
-             }
-    });
+             }
+    });
 }
 function filter1(Veg) {
     
@@ -535,8 +536,8 @@ function filter1(Veg) {
             card1.style.display = 'block';  
         } else {
             card1.style.display = 'none';  
-        }
-    });
+        }
+    });
 }
 function filter2(Meat) {
     
@@ -550,6 +551,6 @@ function filter2(Meat) {
             card2.style.display = 'block';  
         } else {
             card2.style.display = 'none';  
-        }
-    });
+        }
+    });
 }

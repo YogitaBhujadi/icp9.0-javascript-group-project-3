@@ -122,4 +122,3 @@ function closeSidebar(){
     const hamburgerMenuElement = document.getElementById('hamburger-menu');
     hamburgerMenuElement.style.display = 'block'
 }
-
